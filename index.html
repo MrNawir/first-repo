@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p>Welcome to the document!</p>
+    <script>
+        console.log("This is a simple script running in the document.");
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("DOM fully loaded and parsed.");
+            const paragraph = document.querySelector('p');
+            paragraph.textContent = "The content has been updated!";
+        });
+    </script>
 </body>
 </html>
